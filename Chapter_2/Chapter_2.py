@@ -106,11 +106,11 @@
 # Task 1
 # name = input("Write your name")
 # address = input("Write your address, with your town, area and postal code")
-# telephon = input("Write your telephon number")
+# telephone = input("Write your telephone number")
 # specialization = input("Write your specialization in your educational institution")
 # print(name)
 # print(address)
-# print(telephon)
+# print(telephone)
 # print(specialization)
 # Task 2
 # total_sales_amount = float(input("Write total sales amount"))
@@ -158,15 +158,15 @@
 # temperature_fahrenheit = 9/5 * temperature_celsius + 32
 # print(temperature_fahrenheit)
 # Task 10
-# maffin = (int(input('Write amount of maffin')))
-# print('Sugar is:', maffin * (1.5/48))
-# print('Butter is:', maffin * (1/48))
-# print('Flour is:', maffin * (2.75/48))
+# muffin = (int(input('Write amount of muffin')))
+# print('Sugar is:', muffin * (1.5/48))
+# print('Butter is:', muffin * (1/48))
+# print('Flour is:', muffin * (2.75/48))
 # Task 11
 # boys = int(input('Write number of boys'))
 # girls = int(input('Write number of girls'))
 # students = boys + girls
-# print('procent of boys is:', boys/students, 'procent of girls is:', girls/students)
+# print('percent of boys is:', boys/students, 'percent of girls is:', girls/students)
 # Task 12
 # number_of_stocks = float(input('Write number of stocks:'))
 # first_share_price = float(input('Write first share price:'))
@@ -191,7 +191,39 @@
 # annual_interest_rate = float(input('Annual interest rate is:'))
 # Frequency_income_accrual = float(input('Frequency of income accrual'))
 # number_of_years = float(input('Number of years of saving tax'))
-# total_amount_of_money = amount_of_money*(1+annual_interest_rate/Frequency_income_accrual) ** \
-#                         (Frequency_income_accrual * number_of_years)
+# total_amount_of_money = amount_of_money*(1+annual_interest_rate/Frequency_income_accrual) ** (
+#                         Frequency_income_accrual * number_of_years)
 # print(total_amount_of_money)
 # Task 15
+# import turtle
+# turtle.forward(200)
+# turtle.write('Восток')
+# turtle.right(180)
+# turtle.forward(400)
+# turtle.write('Запад')
+# turtle.left(180)
+# turtle.forward(200)
+# turtle.left(90)
+# turtle.forward(200)
+# turtle.write('Север')
+# turtle.left(180)
+# turtle.forward(400)
+# turtle.write('Юг')
+# turtle.left(90)
+# turtle.goto(0, -50)
+# turtle.circle(50)
+# turtle.done()
+#
+# import turtle
+# turtle.fillcolor('red')
+# turtle.begin_fill()
+# turtle.goto(-100, -150)
+# turtle.goto(-200, 0)
+# turtle.goto(-100, 150)
+# turtle.goto(0, 0)
+# turtle.goto(100, 150)
+# turtle.goto(200, 0)
+# turtle.goto(100, -150)
+# turtle.goto(0, 0)
+# turtle.end_fill()
+# turtle.done()
