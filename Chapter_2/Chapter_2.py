@@ -158,15 +158,40 @@
 # temperature_fahrenheit = 9/5 * temperature_celsius + 32
 # print(temperature_fahrenheit)
 # Task 10
-# sugar = 1.5
-# butter = 1
-# flour = 2.75
 # maffin = (int(input('Write amount of maffin')))
 # print('Sugar is:', maffin * (1.5/48))
-# print('Sugar is:', maffin * (1/48))
-# print('Sugar is:', maffin * (2.75/48))
+# print('Butter is:', maffin * (1/48))
+# print('Flour is:', maffin * (2.75/48))
 # Task 11
 # boys = int(input('Write number of boys'))
 # girls = int(input('Write number of girls'))
 # students = boys + girls
 # print('procent of boys is:', boys/students, 'procent of girls is:', girls/students)
+# Task 12
+# number_of_stocks = float(input('Write number of stocks:'))
+# first_share_price = float(input('Write first share price:'))
+# first_amount_of_money = number_of_stocks * first_share_price
+# first_commission = first_amount_of_money * 0.03
+# print('first share price is:', first_share_price, 'first commission is:', first_commission,)
+# second_share_price = float(input('Write second share price:'))
+# print('Second share price is:', second_share_price)
+# second_amount_of_money = number_of_stocks * second_share_price
+# second_commission = second_amount_of_money * 0.03
+# total_amount_of_money = second_amount_of_money - first_commission - second_commission
+# print('profit without any taxes is:', second_amount_of_money)
+# print('clear profit is:', total_amount_of_money )
+# Task 13
+# ridge_length = float(input('Ridge length is:'))
+# end_support_space = float(input('End support space is:'))
+# space_between_vines = float(input('Space between vines is:'))
+# amount_of_grapevine = (ridge_length - 2*end_support_space)/space_between_vines
+# print('Amount of grapevine is:', amount_of_grapevine)
+# Task 14
+# amount_of_money = float(input('Amount of money is:'))
+# annual_interest_rate = float(input('Annual interest rate is:'))
+# Frequency_income_accrual = float(input('Frequency of income accrual'))
+# number_of_years = float(input('Number of years of saving tax'))
+# total_amount_of_money = amount_of_money*(1+annual_interest_rate/Frequency_income_accrual) ** \
+#                         (Frequency_income_accrual * number_of_years)
+# print(total_amount_of_money)
+# Task 15
