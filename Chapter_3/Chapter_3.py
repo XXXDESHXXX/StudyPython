@@ -194,4 +194,192 @@
 # else:
 #     print("Error")
 # Task 10
-
+# print("You are at the game 'Counting machine'! You must enter the required number of coins to get 1 ruble! ")
+# kopecks_50 = int(input("Write amount of a 50 kopecks: "))
+# kopecks_10 = int(input("Write amount of a 10 kopecks: "))
+# kopecks_5 = int(input("Write amount of a 5 kopecks: "))
+# total_kopecks_50 = kopecks_50 * 50
+# total_kopecks_10 = kopecks_10 * 10
+# total_kopecks_5 = kopecks_5 * 5
+# if total_kopecks_50 + total_kopecks_10 + total_kopecks_5 == 100:
+#     print("You are win! Congratulations!")
+# else:
+#     print("Sorry, you are not winner(")
+# Task 11
+# amount_of_books = int(input('Write amount of books that you take in this month'))
+# point = False
+# if amount_of_books == 0:
+#     print('You should buy some books in our shop')
+# elif amount_of_books == 2:
+#     point = 5
+# elif amount_of_books == 4:
+#     point = 15
+# elif amount_of_books == 6:
+#     point = 30
+# elif amount_of_books >= 8:
+#     point = 60
+# else:
+#     print('Error')
+# print('You have ', point)
+# Task 12
+# discount = 0
+# cost = 99
+# amount = int(input('Write amount of a packets that you buy in our company: '))
+# if 10 < amount < 19:
+#     discount = 0.1
+# if 20 < amount < 49:
+#     discount = 0.2
+# if 50 < amount < 99:
+#     discount = 0.3
+# if amount >= 100:
+#     discount = 0.4
+# total_discount = amount * cost * discount
+# total_cost = amount * cost - total_discount
+# if 0.1 <= discount <= 0.4:
+#     print('Total discount is: ', total_discount)
+# else:
+#     print("You don't have discount(")
+# print('Total cost is: ', total_cost)
+# Task 13
+# mass = int(input('Write mass of your packet: '))
+# cost = 0
+# if mass <= 200:
+#     cost = mass / 100 * 150
+# elif 200 < mass <= 600:
+#     cost = mass / 100 * 300
+# elif 600 < mass <= 1000:
+#     cost = mass / 100 * 400
+# elif mass > 1000:
+#     cost = mass / 100 * 475
+# else:
+#     print('Error')
+# print('Your salary = ', cost)
+# Task 14
+# mass = float(input('Write your mass: '))
+# height = float(input('Write your height: '))
+# BMI = mass / height
+# if BMI < 18.5:
+#     print('BMI is too small')
+# elif 18.5 < BMI < 25:
+#     print('BMI is normal')
+# elif BMI > 25:
+#     print('BMI is big')
+# else:
+#     print('Error')
+# Task 15
+# seconds = int(input('Write seconds, please: '))
+# minute = 0
+# hours = 0
+# days = 0
+# if 3600 >= seconds >= 60:
+#     minute = seconds / 60
+#     print('seconds = ', seconds, 'minute = ', minute)
+# if 86400 >= seconds >= 3600:
+#     minute = seconds / 60
+#     hours = seconds / 3600
+#     print('seconds = ', seconds, 'minute = ', minute, 'hours = ', hours)
+# if seconds >= 86400:
+#     minute = seconds / 60
+#     hours = seconds / 3600
+#     days = seconds / 86400
+#     print('seconds = ', seconds, 'minute = ', minute, 'hours = ', hours, 'days = ', days)
+# Task 16
+# year = int(input('Write year: '))
+# if year % 100 == 0 and year % 400 == 0:
+#     print('This year is leap ')
+# elif year % 100 != 0 and year % 4 == 0:
+#     print('This year is leap ')
+# else:
+#     print('This year is not leap ')
+# Task 17
+# print("Reboot the computer and try to connect.\n(Y/N) Enter Y for yes or N for no.")
+#
+# user_answer = input("Did that fix the problem? ")
+#
+# if user_answer == "Y" or user_answer == "y" or user_answer == "N" or user_answer == "n":
+#     if user_answer == "N" or user_answer == "n":
+#         print("Reboot the router and try to connect")
+#         user_answer = input("Did that fix the problem?")
+#
+#     if user_answer == "Y" or user_answer == "y" or user_answer == "N" or user_answer == "n":
+#         if user_answer == "N" or user_answer == "n":
+#             print("Make sure the cables between the router & modem are plugged in firmly")
+#             user_answer = input("Did that fix the problem?")
+#
+#             if user_answer == "Y" or user_answer == "y" or user_answer == "N" or user_answer == "n":
+#                 if user_answer == "N" or user_answer == "n":
+#                     print("Move the router to\nto a new location\nand try to connect")
+#                     user_answer = input("Did that fix the problem?")
+#
+#                     if user_answer == "Y" or user_answer == "y" or user_answer == "n" or user_answer == "N":
+#                         print("Get a new router")
+#                     else:
+#                         print("Please enter Y for yes or N for no. Rerun program and try again.")
+#                 else:
+#                     print("Please enter \"Y\" for yes or \"N\" for no.\n Rerun program and try again.")
+#         else:
+#             print("Please enter \"Y\" for yes or \"N\" for no.\n Rerun program and try again.")
+# else:
+#     print("Pleas enter Y or y for yes or N or n for no")
+# Task 18
+#
+# message = ""
+#
+# vegetarian = input("Is anyone in your party a vegetarian? ")
+# if vegetarian == "yes" or vegetarian == "no":
+#     vegan = input("Is anyone in your party a vegan? ")
+#
+#     if vegan == "yes" or vegan == "no":
+#         gluten_free = input("Is anyone in your party gluten-free? ")
+#
+#         if gluten_free == "yes" or gluten_free == "no":
+#             message = "\nHere are your restaurant choices:\n"
+#
+#             if vegetarian == "yes":
+#
+#                 if vegan == "yes":
+#
+#                     if gluten_free == "yes" or gluten_free == "no":
+#                         message += "Corner Cafe\n" + \
+#                                    "The Chef's Kitchen\n"
+#                 else:
+#                     if gluten_free == "yes":
+#                         message += "Main Street Pizza Company\n" + \
+#                                    "Corner Cafe\n" + \
+#                                    "The Chef's Kitchen\n"
+#                     else:
+#                         message += "Main Street Pizza Company\n" + \
+#                                    "Corner Cafe\n" + \
+#                                    "Mama's Fine Italian\n" + \
+#                                    "The Chef's Kitchen\n"
+#             else:  # vegetarian == "no"
+#
+#                 if vegan == "yes":
+#
+#                     if gluten_free == "yes" or gluten_free == "no":
+#                         message += "Corner Cafe\nThe Chef's Kitchen\n"
+#
+#                 else:  # vegan == "no"
+#
+#                     if gluten_free == "yes":
+#                         message += "Main Street Pizza Company\n" + \
+#                                    "Corner Cafe\n" + \
+#                                    "The Chef's Kitchen\n"
+#
+#                     else:  # gluten free == "no"
+#                         message += "Joe's Gourmet Burgers\n" + \
+#                                    "Main Street Pizza Company\n" + \
+#                                    "Corner Cafe\n" + \
+#                                    "Mama's Fine Italian\n" + \
+#                                    "The Chef's Kitchen\n"
+#
+#         else:
+#             message = "Enter either 'yes' or 'no'.\nRerun the program and try again."
+#
+#     else:
+#         message = "Enter either 'yes' or 'no'.\nRerun the program and try again."
+#
+# else:
+#     message = "Enter either 'yes' or 'no'.\nRerun the program and try again."
+#
+# print(message)
