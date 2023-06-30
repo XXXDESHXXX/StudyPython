@@ -118,4 +118,49 @@
 # salary = kopecks / 100
 # print(salary)
 # Task 8
-
+# sum_of_numbers = 0
+# number = 0
+# while number >= 0:
+#     sum_of_numbers += number
+#     number = int(input('Input number: '))
+# print(sum_of_numbers)
+# Task 9
+# total_millimeters_of_rain = 0
+# for _ in range(25):
+#     total_millimeters_of_rain += 1.6
+# print(total_millimeters_of_rain)
+# Task 10
+# fee_growth = 0
+# for _ in range(6):
+#     fee_growth += 45000 * 0.03
+#     print(fee_growth + 45000)
+# Task 11
+# start_mass = float(input('Input mass that you have now: '))
+# for _ in range(6):
+#     start_mass -= 1.5
+#     print(start_mass)
+# Task 12
+# number = int(input('Input number: '))
+# factorial = 1
+# for i in range(1, number + 1):
+#     factorial *= i
+#     print(factorial)
+# Task 13
+# population = int(input('Input start amount of population: '))
+# growth_coefficient = float(input('Input growth coefficient: '))
+# amount_of_days = int(input('Input amount of days: '))
+# for i in range(1, amount_of_days + 1):
+#     print(i, '\t', population)
+#     population += population * growth_coefficient
+# Task 14
+# size = 7
+# for r in range(size):
+#     for c in range(size - r):
+#         print('*', end='')
+#     print()
+# Task 15
+# for i in range(6):
+#     print("#", end="")
+#     for j in range(i):
+#         print(" ", end="")
+#     print("#")
