@@ -120,3 +120,62 @@
 # main()
 # ***Programming tasks***
 # Task 1
+# def main():
+#     kilometres = get_kilometres()
+#     mill_function(kilometres)
+#
+#
+# def mill_function(kilometres):
+#     mills = kilometres * 0.6214
+#     print(mills)
+#     return mills
+#
+#
+# def get_kilometres():
+#     return float(input('Input distance in kilometres: '))
+#
+#
+# main()
+# Task 2
+# def main():
+#     salary = get_purchase()
+#     federal_tax = get_federal_tax(salary)
+#     regional_tax = get_regional_tax(salary)
+#     total_tax = get_total_tax(regional_tax, federal_tax)
+#     total_amount = get_total_amount(salary, total_tax)
+#     print(salary)
+#     print(federal_tax)
+#     print(regional_tax)
+#     print(total_tax)
+#     print(total_amount)
+#
+#
+# def get_purchase():
+#     purchase_amount = float(input('Write purchase amount: '))
+#     return purchase_amount
+#
+#
+# def get_federal_tax(purchase_amount):
+#     federal_taxes = purchase_amount * 0.05
+#     return federal_taxes
+#
+#
+# def get_regional_tax(purchase_amount):
+#     regional_tax = purchase_amount * 0.025
+#     return regional_tax
+#
+#
+# def get_total_tax(regional_tax, federal_taxes):
+#     sum_of_taxes = regional_tax + federal_taxes
+#     return sum_of_taxes
+#
+#
+# def get_total_amount(salary, total_tax):
+#     total_amount = salary + total_tax
+#     return total_amount
+#
+#
+# main()
+# Task 3
+# def main():
+#     cost_of_insurance = float(input)
