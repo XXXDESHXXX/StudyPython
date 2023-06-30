@@ -85,4 +85,38 @@
 #
 # main()
 # Task 8
-
+# def main():
+#     result = cube(4)
+#     print(result)
+#
+#
+# def cube(num):
+#     return num * num * num
+#
+#
+# main()
+# Task 9
+# def main():
+#     number = int(input('Input number: '))
+#     print(times_ten(number))
+#
+#
+# def times_ten(x):
+#     return x * 10
+#
+#
+# main()
+# Task 10
+# def main():
+#     get_first_name()
+#
+#
+# def get_first_name():
+#     name = input('Input your name: ')
+#     print(name)
+#     return name
+#
+#
+# main()
+# ***Programming tasks***
+# Task 1
