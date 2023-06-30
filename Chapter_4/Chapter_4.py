@@ -158,7 +158,7 @@
 #     for c in range(size - r):
 #         print('*', end='')
 #     print()
- Task 15
+# Task 15
 # for i in range(6):
 #     print("#", end="")
 #     for j in range(i):
