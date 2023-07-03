@@ -412,3 +412,49 @@
 #
 # main()
 # Task 10
+# def main():
+#     feets = get_feet()
+#     inches = get_inches(feets)
+#     print(inches)
+#
+#
+# def get_feet():
+#     feets = int(input('Input number of feets: '))
+#     return feets
+#
+#
+# def get_inches(feets):
+#     inches = feets * 12
+#     return inches
+#
+#
+# main()
+# Task 11
+def main():
+    first_number = get_first_number()
+    second_number = get_second_number()
+    sum_of_numbers = get_sum(first_number, second_number)
+    answer = get_answer(sum_of_numbers)
+    print(sum_of_numbers, answer)
+
+
+def get_first_number():
+    first_number = int(input('Input first number: '))
+    return first_number
+
+
+def get_second_number():
+    second_number = int(input('Input second number: '))
+    return second_number
+
+
+def get_sum(first_number, second_number):
+    return first_number + second_number
+
+
+def get_answer(sum_of_numbers):
+    answer = int(input('Input your answer: '))
+    return answer == sum_of_numbers
+
+
+main()
