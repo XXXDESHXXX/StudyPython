@@ -204,9 +204,14 @@
 #     cost_of_maintenance = get_maintenance_cost()
 #     monthly_payment = get_monthly_cost(
 #         credit_payment, cost_of_insurance, cost_of_tires, cost_of_gasoline, cost_of_engine_oil, cost_of_maintenance
-#         )
+#     )
 #     yearly_payment = get_yearly_cost(
-#         credit_payment, cost_of_insurance, cost_of_tires, cost_of_gasoline, cost_of_engine_oil, cost_of_maintenance
+#         credit_payment,
+#         cost_of_insurance,
+#         cost_of_tires,
+#         cost_of_gasoline,
+#         cost_of_engine_oil,
+#         cost_of_maintenance,
 #     )
 #     print(monthly_payment)
 #     print(yearly_payment)
@@ -248,9 +253,10 @@
 #
 #
 # def get_yearly_cost(credit_payment, cost_insurance, cost_tires, cost_gasoline, cost_engine_oil, cost_maintenance):
-# yearly_cost = (credit_payment + cost_insurance + cost_tires + cost_gasoline + cost_engine_oil + cost_maintenance) *\
-#                   12
-#    return yearly_cost
+#     yearly_cost = (
+#                     credit_payment + cost_insurance + cost_tires + cost_gasoline + cost_engine_oil + cost_maintenance
+#                   ) * 12
+#     return yearly_cost
 #
 #
 # main()
@@ -429,32 +435,228 @@
 #
 #
 # main()
-# Task 11
-def main():
-    first_number = get_first_number()
-    second_number = get_second_number()
-    sum_of_numbers = get_sum(first_number, second_number)
-    answer = get_answer(sum_of_numbers)
-    print(sum_of_numbers, answer)
+# Task 11 and 12
+# def main():
+#     first_number = get_first_number()
+#     second_number = get_second_number()
+#     sum_of_numbers = get_sum(first_number, second_number)
+#     answer = get_answer(sum_of_numbers)
+#     print(sum_of_numbers, answer)
+#
+#
+# def get_first_number():
+#     first_number = int(input('Input first number: '))
+#     return first_number
+#
+#
+# def get_second_number():
+#     second_number = int(input('Input second number: '))
+#     return second_number
+#
+#
+# def get_sum(first_number, second_number):
+#     return first_number + second_number
+#
+#
+# def get_answer(sum_of_numbers):
+#     answer = int(input('Input your answer: '))
+#     return answer == sum_of_numbers
+#
+#
+# main()
+# Task 13
+# def main():
+#     first = int(input('Input first number: '))
+#     second = int(input('Input second number: '))
+#     maximum = max(first, second)
+#     print(maximum)
+#
+#
+# def max(first, second):
+#     if first > second:
+#         return first
+#     else:
+#         return second
+#
+#
+# main()
+# Task 14
+# G = 9.8
+#
+#
+# def main():
+#     for i in range(1, 11):
+#         falling_distance(i)
+#         print(falling_distance(i))
+#
+#
+# def falling_distance(time):
+#     return (G*time**2)/2
+#
+#
+# main()
+# Task 15
+# def main():
+#     mass = get_mass()
+#     speed = get_speed()
+#     kinetic = kinetic_energy(mass, speed)
+#     print(kinetic)
+#
+#
+# def get_mass():
+#     mass = int(input('Input mass: '))
+#     return mass
+#
+#
+# def get_speed():
+#     speed = int(input('Input speed: '))
+#     return speed
+#
+#
+# def kinetic_energy(mass, speed):
+#     kinetic = (mass * speed**2) / 2
+#     return kinetic
+#
+#
+# main()
+# Task 16
+# def main():
+#     first_mark = get_first_mark()
+#     second_mark = get_second_mark()
+#     third_mark = get_third_mark()
+#     fourth_mark = get_fourth_mark()
+#     fifth_mark = get_fifth_mark()
+#     average_value = calc_average(first_mark, second_mark, third_mark, fourth_mark, fifth_mark)
+#     grade = determine_grade(average_value)
+#     print(grade)
+#
+#
+# def get_first_mark():
+#     first_mark = int(input('Input first mark: '))
+#     return first_mark
+#
+#
+# def get_second_mark():
+#     second_mark = int(input('Input second mark: '))
+#     return second_mark
+#
+#
+# def get_third_mark():
+#     third_mark = int(input('Input third mark: '))
+#     return third_mark
+#
+#
+# def get_fourth_mark():
+#     fourth_mark = int(input('Input fourth mark: '))
+#     return fourth_mark
+#
+#
+# def get_fifth_mark():
+#     fifth_mark = int(input('Input fifth mark: '))
+#     return fifth_mark
+#
+#
+# def calc_average(first_mark, second_mark, third_mark, fourth_mark, fifth_mark):
+#     average = (first_mark + second_mark + third_mark + fourth_mark + fifth_mark) / 5
+#     return average
+#
+#
+# def determine_grade(average_value):
+#     if average_value >= 90:
+#         return 'A'
+#     elif 80 <= average_value <= 89:
+#         return 'B'
+#     elif 70 <= average_value <= 79:
+#         return 'C'
+#     elif 60 <= average_value <= 69:
+#         return 'D'
+#     else:
+#         return 'F'
+#
+#
+# main()
+# Task 17
+# import random
+#
+#
+# def main():
+#     count_even = 0
+#     count_odd = 0
+#     for count in range(100):
+#         number = random.randint(1, 100)
+#         if number % 2 == 0:
+#             count_even += 1
+#         else:
+#             count_odd += 1
+#     print(count_even)
+#     print(count_odd)
+#
+#
+# main()
+# Task 18
+# def main():
+#     simple_number = int(input('Input number: '))
+#     number = is_prime(simple_number)
+#     print(number)
+#
+#
+# def is_prime(simple_number):
+#     k = 0
+#     for i in range(2, simple_number):
+#         if simple_number % i == 0:
+#             k = k + 1
+#     if k <= 0:
+#         return 'Simple'
+#     else:
+#         return 'Not simple'
+#
+#
+# main()
+# Task 19
 
 
-def get_first_number():
-    first_number = int(input('Input first number: '))
-    return first_number
-
-
-def get_second_number():
-    second_number = int(input('Input second number: '))
-    return second_number
-
-
-def get_sum(first_number, second_number):
-    return first_number + second_number
-
-
-def get_answer(sum_of_numbers):
-    answer = int(input('Input your answer: '))
-    return answer == sum_of_numbers
-
-
-main()
+# def main():
+#     for number in range(1, 100):
+#         if is_prime(number):
+#             print(number)
+#
+#
+# def is_prime(number):
+#     for i in range(2, number):
+#         if number % i == 0:
+#             return False
+#         return True
+#
+#
+# main()
+# Task 20
+# def main():
+#     current_amount = int(input('Input current amount: '))
+#     interest_rate = int(input('Input interest rate: '))
+#     number_of_months = int(input('Input number of months: '))
+#     future_amount = get_future_amount(current_amount, number_of_months, interest_rate)
+#     print(future_amount)
+#
+#
+# def get_current_amount():
+#     current_amount = int(input('Input current amount: '))
+#     return current_amount
+#
+#
+# def get_interest_rate():
+#     interest_rate = int(input('Input interest rate: '))
+#     return interest_rate
+#
+#
+# def get_number_of_months():
+#     number_of_months = int(input('Input number of months: '))
+#     return number_of_months
+#
+#
+# def get_future_amount(current_amount, number_of_months, interest_rate):
+#     future_amount = current_amount * (number_of_months + 1)**interest_rate
+#     return future_amount
+#
+#
+# main()
+# Task 21
