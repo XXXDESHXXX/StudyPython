@@ -631,9 +631,9 @@
 # main()
 # Task 20
 # def main():
-#     current_amount = int(input('Input current amount: '))
-#     interest_rate = int(input('Input interest rate: '))
-#     number_of_months = int(input('Input number of months: '))
+#     current_amount = get_current_amount()
+#     interest_rate = get_interest_rate()
+#     number_of_months = get_number_of_months()
 #     future_amount = get_future_amount(current_amount, number_of_months, interest_rate)
 #     print(future_amount)
 #
@@ -660,3 +660,68 @@
 #
 # main()
 # Task 21
+# import random
+#
+#
+# def game():
+#     print('Hello, now you play game, where you need to guess number! ')
+#     number = random.randint(1, 100)
+#     answer = int(input('Input number'))
+#     while True:
+#         if answer > number:
+#             print('Too big number')
+#             answer = int(input('Input number'))
+#         elif answer < number:
+#             print('Too small number')
+#             answer = int(input('Input number'))
+#         elif answer == number:
+#             continue_answer = input('Would you like to continue? ')
+#             if continue_answer == 'Yes':
+#                 number = random.randint(1, 100)
+#                 answer = int(input('Input number'))
+#             else:
+#                 break
+#     print('You are win!')
+#     print(answer)
+#     return answer
+#
+#
+# game()
+# Task 22
+# import random
+#
+#
+# def game():
+#     while True:
+#         computer_variant = random.randint(1, 3)
+#         computer_item = None
+#         if computer_variant == 1:
+#             computer_item = 'rock'
+#         elif computer_variant == 2:
+#             computer_item = 'scissors'
+#         elif computer_variant == 3:
+#             computer_item = 'paper'
+#         else:
+#             print('Fool')
+#         human_item = input('Input your item (rock, paper, scissors)')
+#         print(computer_item)
+#         if computer_item == 'rock' and human_item == 'scissors':
+#             print('Rock win!')
+#         elif human_item == 'rock' and computer_item == 'scissors':
+#             print('Rock win!')
+#         elif computer_item == 'scissors' and human_item == 'paper':
+#             print('Scissors win!')
+#         elif human_item == 'scissors' and computer_item == 'paper':
+#             print('Scissors win!')
+#         elif computer_item == 'paper' and human_item == 'rock':
+#             print('Paper win!')
+#         elif human_item == 'paper' and computer_item == 'rock':
+#             print('Paper win!')
+#         elif computer_item == human_item:
+#             print('We need to try again )')
+#             computer_variant = random.randint(1, 3)
+#         else:
+#             break
+#
+#
+# game()
