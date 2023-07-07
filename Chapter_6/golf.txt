@@ -1,0 +1,10 @@
+John 
+5 
+Milan 
+3 
+Artem 
+4 
+Yan 10 
+10 
+Julia 
+1 
