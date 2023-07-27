@@ -175,37 +175,58 @@
 #
 # main()
 # Task 7
-
-
-def main():
-    correct_answers = 0
-    incorrect_answers = 0
-    list_of_correct = []
-    list_of_incorrect = []
-    marks_file = open('Marks.txt', 'r')
-    solution_file = open('Solution.txt', 'r')
-    solution_list = solution_file.readlines()
-    mark_list = marks_file.readlines()
-    marks_file.close()
-    solution_file.close()
-    index = 0
-    while index < len(mark_list):
-        mark_list[index] = mark_list[index].rstrip('\n')
-        solution_list[index] = solution_list[index].rstrip('\n')
-        index += 1
-    for mark_value in mark_list:
-        if mark_value == solution_list:
-            list_of_correct.append(solution_list)
-            correct_answers += 1
-        elif mark_value != solution_list:
-            list_of_incorrect.append(solution_list)
-            incorrect_answers += 1
-    if correct_answers >= 15:
-        print('You are pass the exam!')
-    else:
-        print("You are don't pass(")
-    print(correct_answers, incorrect_answers)
-    print(list_of_incorrect)
-
-
-main()
+# def main():
+#     correct_answers = 0
+#     incorrect_answers = 0
+#     necessary_answers = ["A", "C", "A", "A", "D",
+#                          "B", "C", "A", "C", "B",
+#                          "A", "D", "C", "A", "D",
+#                          "C", "B", "B", "D", "A"]
+#     list_of_incorrect = []
+#     list_of_correct = []
+#     solution_file = open('Solution.txt', 'r')
+#     solution_list = solution_file.readlines()
+#     index = 0
+#     while index < len(solution_list):
+#         solution_list[index] = solution_list[index].rstrip('\n')
+#         index += 1
+#     i = 0
+#     while i < len(necessary_answers):
+#         if necessary_answers[i] == solution_list[i]:
+#             correct_answers += 1
+#             list_of_correct.append(necessary_answers[i])
+#         else:
+#             incorrect_answers += 1
+#             list_of_incorrect.append(solution_list[i])
+#             print("The question #", i + 1, " is wrong!", sep="")
+#         i += 1
+#     if incorrect_answers >= 15:
+#         print('You are not pass the exam( ')
+#     else:
+#         print('You are pass the exam! Congratulations!')
+#     print(correct_answers, incorrect_answers, list_of_correct, list_of_incorrect)
+#     solution_file.close()
+#
+#
+# main()
+# Task 8
+# def main():
+#     girls_names_file = open('GirlNames.txt', 'r')
+#     boys_names_file = open('BoysNames.txt', 'r')
+#     girls_names_list = girls_names_file.read().splitlines()
+#     boys_names_list = boys_names_file.read().splitlines()
+#     search = input('Input name, please: ')
+#     if search in girls_names_list:
+#         print('Yes it is found')
+#     else:
+#         print('It is not found')
+#     if search in boys_names_list:
+#         print('Yes, it is found')
+#     else:
+#         print('It is not found')
+#     girls_names_file.close()
+#     boys_names_file.close()
+#
+#
+# main()
+# Task 9
