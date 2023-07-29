@@ -63,9 +63,6 @@
 # list3 = list1 + list2
 # print(list3)
 # Task 8
-# import random
-#
-#
 # ROWS = 5
 # COLUMNS = 3
 #
@@ -79,7 +76,6 @@
 #     for r in range(ROWS):
 #         for c in range(COLUMNS):
 #             values[r][c] = int(input('Input value: '))
-#
 #     print(values)
 #
 #
@@ -230,3 +226,73 @@
 #
 # main()
 # Task 9
+# def main():
+#     population_file = open('USPopulation.txt', 'r')
+#     population_list = population_file.readlines()
+#     index = 0
+#     while index < len(population_list):
+#         population_list[index] = int(population_list[index])
+#         index += 1
+#     annual_change = annualchange(population_list)
+#     total = 0
+#     for elements in annual_change:
+#         total += elements
+#     average = total / len(annual_change)
+#     print(average)
+#     print(max(annual_change))
+#     print(min(annual_change))
+#
+#
+# def annualchange(population_list):
+#     annual_change = [0] * (len(population_list) - 1)
+#     index = 0
+#     while index < len(population_list) - 1:
+#         annual_change[index] = population_list[index + 1] - population_list[index]
+#         index += 1
+#     return annual_change
+#
+#
+# main()
+# Task 10
+# def main():
+#     total_wins = 0
+#     winners_file = open('Winners.txt', 'r')
+#     winners_list = winners_file.read().splitlines()
+#     search = input('Input team name that you wanna find: ')
+#     for value in winners_list:
+#         if value == search:
+#             total_wins += 1
+#     print(total_wins)
+#
+#
+# main()
+# Task 11
+# Task 12
+# def main():
+#     n = int(input("n="))
+#     lst = []
+#     for i in range(2, n + 1):
+#         for j in range(2, i):
+#             if i % j == 0:
+#                 break
+#         else:
+#             lst.append(i)
+#     print(lst)
+#
+#
+# main()
+# Task 13
+# import random
+#
+#
+# def main():
+#     task_file = open('Task13.txt', 'r')
+#     answer_list = task_file.read().splitlines()
+#     answer = input('Would you like to start game? ')
+#     while answer == 'yes':
+#         question = input('Ask a question, please: ')
+#         print(answer_list[random.randint(1, 12)])
+#         answer = input('Would you like to continue?')
+#
+#
+# main()
