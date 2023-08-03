@@ -217,6 +217,65 @@
 #
 # main()
 # Task 8
+# def main():
+#     my_string = input("Enter a string: ")
+#     print()
+#     print(my_string)
+#     capitalizer_first_word(my_string)
+#
+#
+# def capitalizer_first_word(my_string):
+#     my_string2 = my_string.split()
+#
+#     for i in range(0, len(my_string2)):
+#         if my_string2[i - 1].endswith('.') or my_string2[i - 1].endswith('!') \
+#                 or my_string2[i - 1].endswith('?'):
+#             print(my_string2[i].capitalize(), end=' ')
+#         else:
+#             print(my_string2[i], end=' ')
+#
+#
+# main()
+# Task 9
+# def main():
+#     list_of_vowels = ('a', 'e', 'y', 'o')
+#     consonants_counter = 0
+#     vowels_counter = 0
+#     my_string = input('Input string: ')
+#     for ch in my_string:
+#         if ch in list_of_vowels:
+#             vowels_counter += 1
+#         else:
+#             consonants_counter += 1
+#     print(consonants_counter, vowels_counter)
+#
+#
+# main()
+# Task 10
+# from collections import Counter
+#
+#
+# def main():
+#     user_string = input("Enter a string: ")
+#     max_3 = Counter(user_string).most_common(3)
+#     print("The most frequently occuring letter is", max_3)
+#
+#
+# main()
+# Task 11
+# def main():
+#     my_string = input('Input a string: ')
+#     print(my_string[0].upper(), end='')
+#     for i in range(1, len(my_string)):
+#         if my_string[i].isupper():
+#             print(' ', end='')
+#             print(my_string[i].lower(), end='')
+#         else:
+#             print(my_string[i], end='')
+#
+#
+# main()
+# Task 12
 def main():
 
 
