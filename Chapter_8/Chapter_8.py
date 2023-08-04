@@ -277,7 +277,11 @@
 # main()
 # Task 12
 def main():
-
+    my_string = input('Input a string: ')
+    split_string = my_string.split()
+    for i in split_string:
+        new_string = i[1:] + i[0]
+        print(new_string + 'KI', end=' ')
 
 
 main()
