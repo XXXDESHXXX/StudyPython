@@ -142,3 +142,40 @@
 #
 # main()
 # Task 2
+# import random
+#
+#
+# def main():
+#     right_answers = 0
+#     mistakes = 0
+#     states_dictionary = {'Arizona': 'Phoenix',
+#                          'New Mexico': 'Santa Fe',
+#                          'Colorado': 'Denver',
+#                          'Nevada': 'California',
+#                          'Oregon': 'Salem',
+#                          'Washington': 'Olympia'}
+#     answer = ''
+#     continue_answer = 'YES'
+#     try:
+#         while continue_answer == 'YES':
+#             state, capital = random.choice(list(states_dictionary.items()))
+#             print(state)
+#             answer = input('Input capital of this state: ')
+#             if answer == capital:
+#                 right_answers += 1
+#             else:
+#                 mistakes += 1
+#             continue_answer = input('Would you like to continue').upper()
+#         print(right_answers)
+#         print(mistakes)
+#     except KeyError:
+#         print('You answer on all questions')
+#
+#
+# main()
+# Task 3
+def main():
+
+
+
+main()
