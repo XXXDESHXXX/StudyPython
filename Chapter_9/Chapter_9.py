@@ -174,8 +174,52 @@
 #
 # main()
 # Task 3
-def main():
-
-
-
-main()
+# def main():
+#     coding_table = {'A': '%', 'B': '@', 'D': '^'}
+#     coding_file = open('Coding_file.txt', 'r')
+#     file_content = coding_file.readline()
+#     list_content = list(file_content)
+#     new_file_content = ''
+#     for letters in list_content:
+#         for key, value in coding_table.items():
+#             if letters == key:
+#                 new_file_content += value
+#     print(new_file_content)
+#
+#
+# main()
+# Task 4
+# def main():
+#     my_string = "Welcome! STASEBAN is one of the most EBAN in the world " \
+#                 "Story about him is wonderful but he also kakaet) with NIKITA " \
+#                 "NIKITAPERRIUTKONOS is a person that likes Linus and Linux " \
+#                 "NIKITAPERRIUTKONOS take my bakugan) and drop him on my face " \
+#                 "THIS STORY IS AMAZING! Stop. WARNING? STASEBAN HERE, HELP! "
+#     new_file = open('text_file_9.4.txt', 'w')
+#     content = my_string.split()
+#     content_clear = set([])
+#     for i in content:
+#         if i.endswith('.') or i.endswith(',') \
+#                 or i.endswith('!') or i.endswith(':') \
+#                 or i.endswith(')') or i.endswith('?') \
+#                 or i.endswith('}') or i.endswith('"'):
+#             new_file.write(i[:-1] + '\n')
+#             content_clear.update([i[:-1]])
+#             continue
+#         if i.startswith('.') or i.startswith(',') \
+#                 or i.startswith('!') or i.startswith(':') \
+#                 or i.startswith('(') or i.startswith('?') \
+#                 or i.startswith('{') or i.startswith("'") or \
+#                 i.startswith('"'):
+#             new_file.write(i[1:] + '\n')
+#             content_clear.update([i[1:]])
+#             continue
+#         else:
+#             new_file.write(i + '\n')
+#             content_clear.update([i])
+#     print(len(content_clear))
+#     new_file.close()
+#
+#
+# main()
+# Task 5
