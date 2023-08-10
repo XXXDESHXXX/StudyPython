@@ -223,3 +223,55 @@
 #
 # main()
 # Task 5
+# def main():
+#     my_str = ("Welcome! Are are are you completely new to programming? "
+#               "'If not then we presume you will be looking for information "
+#               "about why and and  how to get started with Python. "
+#               "Fortunately an experienced programmer in any programming "
+#               "language (whatever it may be) can pick up Python very very "
+#               "very very very quickly. It's also easy for beginners "
+#               "to use 4 4 4 4   and learn, so jump in!")
+#     validated_str = replace_letters(my_str, [',', '.', '!', '?', ')', '('])
+#     validated_list = validated_str.split()
+#     word_dictionary = {}
+#     for words in validated_list:
+#         word_counter = 0
+#         for word in validated_list:
+#             if words == word:
+#                 word_counter += 1
+#                 word_dictionary[words] = word_counter
+#     print(word_dictionary)
+#
+#
+# def replace_letters(my_str, symbols):
+#     for symbol in symbols:
+#         my_str = my_str.replace(symbol, "")
+#     return my_str
+#
+#
+# main()
+# Task 6
+def main():
+    my_str = 'Dorem lorem leroi jora NIKITAPERRIUTKONOS STASEBAN Kuvshin gadyka'
+    my_str2 = 'Dor lor leroi jora Stas SAS'
+    first_set = set()
+    second_set = set()
+    create_file(my_str)
+    create_file(my_str2)
+
+
+def create_file(my_str):
+    name_of_file = input('Enter file name: ')
+    text_file = open(name_of_file, 'w')
+    for words in my_str.split():
+        my_str.write(words + '\n')
+    text_file.close()
+
+
+def replace_letters(my_str, symbols):
+    for symbol in symbols:
+        my_str = my_str.replace(symbol, "")
+    return my_str
+
+
+main()
