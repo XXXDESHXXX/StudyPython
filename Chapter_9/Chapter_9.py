@@ -29,14 +29,12 @@
 # Task 4
 # def main():
 #     delete_key = input('Input key that you want to delete in dictionary: ')
-#     dct = {'James': 1, 'Jim': 2, 'STASEBAN': 3}
+#     dct = {'James': 1, 'Jim': 2}
 #     if delete_key in dct:
 #         del dct[delete_key]
 #         print(dct)
 #     else:
 #         print('Not found(')
-#     if delete_key == 'STASEBAN':
-#         print('Stas always EBAN')
 #
 #
 # main()
@@ -190,11 +188,13 @@
 # main()
 # Task 4
 # def main():
-#     my_string = "Welcome! STASEBAN is one of the most EBAN in the world " \
-#                 "Story about him is wonderful but he also kakaet) with NIKITA " \
-#                 "NIKITAPERRIUTKONOS is a person that likes Linus and Linux " \
-#                 "NIKITAPERRIUTKONOS take my bakugan) and drop him on my face " \
-#                 "THIS STORY IS AMAZING! Stop. WARNING? STASEBAN HERE, HELP! "
+#     my_string = ("Welcome! Are are are you completely new to programming? "
+#               "'If not then we presume you will be looking for information "
+#               "about why and and  how to get started with Python. "
+#               "Fortunately an experienced programmer in any programming "
+#               "language (whatever it may be) can pick up Python very very "
+#               "very very very quickly. It's also easy for beginners "
+#               "to use 4 4 4 4   and learn, so jump in!")
 #     new_file = open('text_file_9.4.txt', 'w')
 #     content = my_string.split()
 #     content_clear = set([])
@@ -234,12 +234,12 @@
 #     validated_str = replace_letters(my_str, [',', '.', '!', '?', ')', '('])
 #     validated_list = validated_str.split()
 #     word_dictionary = {}
-#     for words in validated_list:
+#     for word in validated_list:
 #         word_counter = 0
-#         for word in validated_list:
-#             if words == word:
+#         for words in validated_list:
+#             if word == words:
 #                 word_counter += 1
-#                 word_dictionary[words] = word_counter
+#                 word_dictionary[word] = word_counter
 #     print(word_dictionary)
 #
 #
@@ -251,27 +251,95 @@
 #
 # main()
 # Task 6
+# def main():
+#     my_str = ("Welcome! Are are are you completely new to programming? 'If"
+#               " not then we presume you will be looking for information about "
+#               "why and how to get started with Python. Fortunately an "
+#               "experienced programmer in any programming language (whatever "
+#               "it may be) can pick up Python very quickly. It's also easy for"
+#               " beginners to use and learn, so jump in! can pick up Python "
+#               "very quickly. Newton ")
+#     my_str2 = ("Welcome! Are are are you completely new to programming? 'If "
+#                "not then we presume you will be looking for information about "
+#                "why and how to get started with Python. Fortunately an "
+#                "experienced programmer in any programming language (whatever "
+#                "it may be) can pick up Python very quickly. It's also easy "
+#                "for beginners to use and learn, so jump in! can pick "
+#                "up Python very quickly. Lomonosov")
+#     first_set = set()
+#     second_set = set()
+#     file_name = 'text_count.txt'
+#     file_name2 = 'text_count_2.txt'
+#     first_split_str = split_str(my_str)
+#     second_split_str = split_str(my_str2)
+#     create_file(first_split_str, file_name)
+#     create_file(second_split_str, file_name2)
+#     first_replaced_content = replace_letters(my_str, [',', '.', '!', '?', ')', '('])
+#     second_replaced_content = replace_letters(my_str2, [',', '.', '!', '?', ')', '('])
+#     first_updated_set = set_update(first_set, first_replaced_content)
+#     second_updated_set = set_update(second_set, second_replaced_content)
+#     print_func(first_updated_set, second_updated_set)
+#
+#
+# def create_file(splited_str, file_name):
+#     text_file = open(str(file_name), 'w')
+#     for words in splited_str:
+#         text_file.write(words + '\n')
+#     text_file.close()
+#
+#
+# def split_str(my_str):
+#     splited_str = my_str.split()
+#     return splited_str
+#
+#
+# def replace_letters(my_str, symbols):
+#     for symbol in symbols:
+#         my_str = my_str.replace(symbol, "")
+#     replaced_splited_str = my_str.split()
+#     return replaced_splited_str
+#
+#
+# def set_update(set_name, content_rstrip):
+#     for element in content_rstrip:
+#         set_name.update([element])
+#     return set_name
+#
+#
+# def print_func(first_set, second_set):
+#     print('All unique words in both files: ')
+#     union_file = first_set | second_set
+#     print('Number of words: ', len(union_file))
+#     print()
+#     print('Set words included in both files:')
+#     inter_file = first_set & second_set
+#     print(inter_file)
+#     print('Number of words: ', len(inter_file))
+#     print()
+#     print('Set words from the first file that are not '
+#           'included in the second one:')
+#     diff_file = first_set - second_set
+#     print(diff_file)
+#     print('Number of words: ', len(diff_file))
+#     print()
+#     print('Set words from the second file that are not'
+#           ' included in the first one:')
+#     diff_file2 = second_set - first_set
+#     print(diff_file2)
+#     print('Number of words: ', len(diff_file2))
+#     print()
+#     print('Shows a set of words that are included in either the \n '
+#           'first or second file, but are not included in both \n'
+#           'files at the same time:')
+#     sym_diff_file = first_set ^ second_set
+#     print(sym_diff_file)
+#     print('Number of words: ', len(sym_diff_file))
+#
+#
+# main()
+# Task 7
 def main():
-    my_str = 'Dorem lorem leroi jora NIKITAPERRIUTKONOS STASEBAN Kuvshin gadyka'
-    my_str2 = 'Dor lor leroi jora Stas SAS'
-    first_set = set()
-    second_set = set()
-    create_file(my_str)
-    create_file(my_str2)
 
-
-def create_file(my_str):
-    name_of_file = input('Enter file name: ')
-    text_file = open(name_of_file, 'w')
-    for words in my_str.split():
-        my_str.write(words + '\n')
-    text_file.close()
-
-
-def replace_letters(my_str, symbols):
-    for symbol in symbols:
-        my_str = my_str.replace(symbol, "")
-    return my_str
 
 
 main()
