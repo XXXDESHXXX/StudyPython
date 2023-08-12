@@ -338,8 +338,161 @@
 #
 # main()
 # Task 7
-def main():
-
-
-
-main()
+# from collections import Counter
+#
+#
+# def main():
+#     winners_list = []
+#
+#     def creat_list():
+#         new_file = open('WorldSeriesWinners.txt', 'r')
+#         content = new_file.readline()
+#         year = 1903
+#
+#         while content != '':
+#             if year == 1904 or year == 1994:
+#                 content = content.rstrip()
+#                 winners_list.append('World Series Not Played')
+#                 winners_list.append(content)
+#                 year += 2
+#                 content = new_file.readline()
+#
+#             else:
+#                 content = content.rstrip()
+#                 winners_list.append(content)
+#                 year += 1
+#                 content = new_file.readline()
+#
+#         new_file.close()
+#
+#     creat_list()
+#
+#     def dict_count_win(list_winner):
+#         dict_count_win = dict(
+#             Counter(list_winner))
+#
+#         return dict_count_win
+#
+#     def dict_year_team(list_winner):
+#         year_team_dict = {}
+#         year = 1903
+#
+#         for i in list_winner:
+#             year_team_dict.update({year: i})
+#             year += 1
+#
+#         return year_team_dict
+#
+#     def search_result():
+#         search_year = 0
+#         year = False
+#         while year == False:
+#             try:
+#                 search_year = int(
+#                     input('Enter year in the range 1903 - 2019: '))
+#                 if search_year < 1903 or search_year > 2019:
+#                     print('Enter the correct year, between 1903 and 2019!')
+#                     search_year = int(input('Enter year: '))
+#                 else:
+#                     year = True
+#
+#             except ValueError:
+#                 print('Enter numbers not string, between 1903 and 2019!')
+#
+#         name_team = dict_year_team(winners_list).get(search_year)
+#         count_won_team = dict_count_win(winners_list).get(name_team)
+#
+#         print()
+#         print('The winner World Series ' + str(search_year) + ' is',
+#               str(name_team) + '.')
+#         if search_year == 1904 or search_year == 1994:
+#             pass
+#         else:
+#             print('And it has won the cup ', count_won_team, 'times.')
+#
+#     search_result()
+#
+#
+# main()
+# Task 8
+# ADD = 1
+# FIND = 2
+# DELETE = 3
+# PRINT = 4
+# QUIT = 5
+#
+#
+# def main():
+#     dict_address = {}
+#     choice = 0
+#     while choice != QUIT:
+#         choice = get_menu()
+#         if choice == 1:
+#             add_address(dict_address)
+#         if choice == 2:
+#             find_address(dict_address)
+#         if choice == 3:
+#             delete_address(dict_address)
+#         if choice == 4:
+#             print_dictionary(dict_address)
+#
+#
+# def get_menu():
+#     print()
+#     print('1.Add or change address')
+#     print('2.Find address')
+#     print('3.Delete address')
+#     print('4.Print dictionary')
+#     print('5.Quit')
+#     choice = int(input('Choose your variant: '))
+#     return choice
+#
+#
+# def add_address(dict_address):
+#     name = input('Enter a name: ')
+#     email = input('Enter a email: ')
+#     dict_address[name] = email
+#
+#
+# def find_address(dict_address):
+#     search = input('Enter a name: ')
+#     if search in dict_address:
+#         print(dict_address[search])
+#     else:
+#         print('Not found')
+#
+#
+# def delete_address(dict_address):
+#     del_address = input('Enter a name: ')
+#     delete_name = ''
+#     if del_address in dict_address:
+#         delete_name = dict_address.pop(del_address, 'Not found')
+#     print(delete_name)
+#
+#
+# def print_dictionary(dict_address):
+#     print(dict_address)
+#
+#
+# main()
+# Task 10
+# def main():
+#     my_file = open('Kennedy.txt', 'r')
+#     word_dict = {}
+#     content = my_file.readline()
+#     counter = 0
+#     while content != '':
+#         if '\n' in content:
+#             counter += 1
+#         word_list = content.split()
+#         for word in word_list:
+#             if word in word_dict:
+#                 word_dict[word] += str(counter) + ' '
+#             else:
+#                 word_dict[word] = str(counter) + ' '
+#         content = my_file.readline()
+#     for key, value in word_dict.items():
+#         print(key + ': ' + value)
+#
+#
+# main()
