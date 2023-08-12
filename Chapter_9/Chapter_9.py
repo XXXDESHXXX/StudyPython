@@ -252,20 +252,24 @@
 # main()
 # Task 6
 # def main():
-#     my_str = ("Welcome! Are are are you completely new to programming? 'If"
-#               " not then we presume you will be looking for information about "
-#               "why and how to get started with Python. Fortunately an "
-#               "experienced programmer in any programming language (whatever "
-#               "it may be) can pick up Python very quickly. It's also easy for"
-#               " beginners to use and learn, so jump in! can pick up Python "
-#               "very quickly. Newton ")
-#     my_str2 = ("Welcome! Are are are you completely new to programming? 'If "
-#                "not then we presume you will be looking for information about "
-#                "why and how to get started with Python. Fortunately an "
-#                "experienced programmer in any programming language (whatever "
-#                "it may be) can pick up Python very quickly. It's also easy "
-#                "for beginners to use and learn, so jump in! can pick "
-#                "up Python very quickly. Lomonosov")
+#     my_str = (
+#         "Welcome! Are are are you completely new to programming? 'If"
+#         " not then we presume you will be looking for information about "
+#         "why and how to get started with Python. Fortunately an "
+#         "experienced programmer in any programming language (whatever "
+#         "it may be) can pick up Python very quickly. It's also easy for"
+#         " beginners to use and learn, so jump in! can pick up Python "
+#         "very quickly. Newton "
+#     )
+#     my_str2 = (
+#         "Welcome! Are are are you completely new to programming? 'If "
+#         "not then we presume you will be looking for information about "
+#         "why and how to get started with Python. Fortunately an "
+#         "experienced programmer in any programming language (whatever "
+#         "it may be) can pick up Python very quickly. It's also easy "
+#         "for beginners to use and learn, so jump in! can pick "
+#         "up Python very quickly. Lomonosov"
+#     )
 #     first_set = set()
 #     second_set = set()
 #     file_name = 'text_count.txt'
@@ -274,8 +278,8 @@
 #     second_split_str = split_str(my_str2)
 #     create_file(first_split_str, file_name)
 #     create_file(second_split_str, file_name2)
-#     first_replaced_content = replace_letters(my_str, [',', '.', '!', '?', ')', '('])
-#     second_replaced_content = replace_letters(my_str2, [',', '.', '!', '?', ')', '('])
+#     first_replaced_content = remove_letters(my_str, [',', '.', '!', '?', ')', '('])
+#     second_replaced_content = remove_letters(my_str2, [',', '.', '!', '?', ')', '('])
 #     first_updated_set = set_update(first_set, first_replaced_content)
 #     second_updated_set = set_update(second_set, second_replaced_content)
 #     print_func(first_updated_set, second_updated_set)
@@ -293,7 +297,7 @@
 #     return splited_str
 #
 #
-# def replace_letters(my_str, symbols):
+# def remove_letters(my_str, symbols):
 #     for symbol in symbols:
 #         my_str = my_str.replace(symbol, "")
 #     replaced_splited_str = my_str.split()
@@ -413,8 +417,28 @@
 #     search_result()
 #
 #
-# main()
+# main
+# from collections import defaultdict
+#
+#
+# def main():
+#     team_count = defaultdict(int)
+#     team_wins = defaultdict(list)
+#     start_year = 1903
+#     with open('WorldSeriesWinners.txt') as file:
+#         for i, team in enumerate(file.readlines()):
+#             team_count[team] += 1
+#             current_year = start_year + i
+#             team_wins[team].append(current_year)
+#     print(team_count, team_wins)
+#
+#
+# if __name__ == '__main__':
+#     main()
 # Task 8
+# import pickle
+#
+#
 # ADD = 1
 # FIND = 2
 # DELETE = 3
@@ -423,18 +447,32 @@
 #
 #
 # def main():
-#     dict_address = {}
+#     try:
+#         addresses = load_data()
+#     except EOFError:
+#         addresses = {}
 #     choice = 0
 #     while choice != QUIT:
 #         choice = get_menu()
-#         if choice == 1:
-#             add_address(dict_address)
-#         if choice == 2:
-#             find_address(dict_address)
-#         if choice == 3:
-#             delete_address(dict_address)
-#         if choice == 4:
-#             print_dictionary(dict_address)
+#         if choice == ADD:
+#             add_address(addresses)
+#         if choice == FIND:
+#             find_address(addresses)
+#         if choice == DELETE:
+#             delete_address(addresses)
+#         if choice == PRINT:
+#             print_dictionary(addresses)
+#     save_data(addresses)
+#
+#
+# def save_data(addresses):
+#     with open('email.dat', 'wb') as file:
+#         pickle.dump(addresses, file)
+#
+#
+# def load_data():
+#     with open('email.dat', 'rb') as file:
+#         return pickle.load(file)
 #
 #
 # def get_menu():
@@ -496,3 +534,31 @@
 #
 #
 # main()
+# from collections import defaultdict
+#
+#
+# def main():
+#     word_lines = get_word_lines()
+#     save_to_file(word_lines)
+#     print(word_lines)
+#
+#
+# def get_word_lines():
+#     with open('Kennedy.txt') as file:
+#         words = defaultdict(list)
+#         for i, line in enumerate(file.readlines(), 1):
+#             for word in line.split():
+#                 words[word].append(str(i))
+#         return words
+#
+#
+# def save_to_file(word_lines):
+#     with open('Kennedy_write.txt', 'w') as file:
+#         for key, value in word_lines.items():
+#             joined_value = ' '.join(value)
+#             result = f'{key}: {joined_value}'
+#             file.writelines(result + '\n')
+#
+#
+# if __name__ == '__main__':
+#     main()
