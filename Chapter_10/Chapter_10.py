@@ -160,3 +160,73 @@
 #
 # main()
 # Task 4
+# class Employee:
+#     def __init__(self, name, identifier, department, post):
+#         self.__name = name
+#         self.__identifier = identifier
+#         self.__department = department
+#         self.__post = post
+#
+#     def __str__(self):
+#         return f'{self.__name}, {self.__post}, {self.__department}, {self.__identifier}'
+#
+#
+# def main():
+#     first_employee = Employee('Suzan', 47899, 'Accounting', 'Vice President')
+#     second_employee = Employee('Mark', 39119, 'IT', 'Programming')
+#     third_employee = Employee('Joe', 81774, 'Production', 'Engineer')
+#     print(first_employee)
+#     print(second_employee)
+#     print(third_employee)
+#
+#
+# main()
+# Task 5
+# class RetailItem:
+#     def __init__(self, description, amount, cost):
+#         self.__description = description
+#         self.__amount = amount
+#         self.__cost = cost
+#
+#     def __str__(self):
+#         return f'{self.__description}, {self.__amount}, {self.__cost}'
+#
+#
+# def main():
+#     first_product = RetailItem('jacket', 12, 59.95)
+#     second_product = RetailItem('jeans', 40, 34.95)
+#     third_product = RetailItem('shirt', 20, 24.95)
+#     print(first_product)
+#     print(second_product)
+#     print(third_product)
+#
+#
+# main()
+# Task 6
+# class Patient:
+#     def __init__(self, first_name, last_name, full_name, address, phone, telephone_number):
+#         self.__first_name = first_name
+#         self.__last_name = last_name
+#         self.__full_name = full_name
+#         self.__address = address
+#         self.__phone = phone
+#         self.__telephone_number = telephone_number
+#
+#     def get_first_name(self):
+#         return self.__first_name
+#
+#     def get_last_name(self):
+#         return self.__last_name
+#
+#     def get_full_name(self):
+#         return self.__full_name
+#
+#     def get_address(self):
+#         return self.__address
+#
+#     def get_phone(self):
+#         return self.__phone
+#
+#     def get_telephone_number(self):
+#         return self.__telephone_number
+#
