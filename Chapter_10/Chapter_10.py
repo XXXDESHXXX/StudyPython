@@ -204,10 +204,10 @@
 # main()
 # Task 6
 # class Patient:
-#     def __init__(self, first_name, last_name, full_name, address, phone, telephone_number):
+#     def __init__(self, first_name, last_name, address, phone, telephone_number):
 #         self.__first_name = first_name
 #         self.__last_name = last_name
-#         self.__full_name = full_name
+#         self.__full_name = f'{self.__first_name} {self.__last_name}'
 #         self.__address = address
 #         self.__phone = phone
 #         self.__telephone_number = telephone_number
@@ -219,7 +219,7 @@
 #         return self.__last_name
 #
 #     def get_full_name(self):
-#         return self.__full_name
+#         return f'{self.__first_name} {self.__last_name}'
 #
 #     def get_address(self):
 #         return self.__address
@@ -230,3 +230,96 @@
 #     def get_telephone_number(self):
 #         return self.__telephone_number
 #
+#     def set_first_name(self, first_name):
+#         self.__first_name = first_name
+#
+#     def set_last_name(self, last_name):
+#         self.__last_name = last_name
+#
+#     def set_full_name(self):
+#         self.__full_name = f'{self.__first_name} {self.__last_name}'
+#
+#     def set_address(self, address):
+#         self.__address = address
+#
+#     def set_phone(self, phone):
+#         self.__phone = phone
+#
+#     def set_telephone_number(self, telephone_number):
+#         self.__telephone_number = telephone_number
+#
+#     def __str__(self):
+#         return f'{self.__full_name}, {self.__telephone_number}, {self.__phone}, {self.__address}'
+#
+#
+# class Procedure:
+#     def __init__(self, name, date, doctor_name, cost):
+#         self.__name = name
+#         self.__date = date
+#         self.__doctor_name = doctor_name
+#         self.__cost = cost
+#
+#     def get_name(self):
+#         return self.__name
+#
+#     def get_date(self):
+#         return self.__date
+#
+#     def get_doctor_name(self):
+#         return self.__doctor_name
+#
+#     def get_cost(self):
+#         return self.__cost
+#
+#     def set_name(self, name):
+#         self.__name = name
+#
+#     def set_date(self, date):
+#         self.__date = date
+#
+#     def set_doctor_name(self, doctor_name):
+#         self.__doctor_name = doctor_name
+#
+#     def set_cost(self, cost):
+#         self.__cost = cost
+#
+#     def __str__(self):
+#         return f'{self.__name}, {self.__date}, {self.__cost}, {self.__doctor_name}'
+#
+#
+# def main():
+#     patient = Patient('Nikolai', 'Ivanov', 'Minsk', '23125', '3751231231')
+#     first_procedure = Procedure('examination', '22.04.2023', 'I.A.Akimovich', 750)
+#     second_procedure = Procedure('X-ray', '31.05.2023', 'A.B.Dmitrovich', 1050)
+#     third_procedure = Procedure('Blood test', '21.09.2023', 'I.K.Adamovich', 2600)
+#     print(patient, '\n')
+#     print(first_procedure, '\n')
+#     print(second_procedure, '\n')
+#     print(third_procedure, '\n')
+#     cost = first_procedure.get_cost() + second_procedure.get_cost() + third_procedure.get_cost()
+#     print(cost)
+#
+#
+# main()
+# Task 7
+# class Employee:
+#     def __init__(self, name, identifier, department, post):
+#         self.__name = name
+#         self.__identifier = identifier
+#         self.__department = department
+#         self.__post = post
+#
+#     def __str__(self):
+#         return f'{self.__name}, {self.__post}, {self.__department}, {self.__identifier}'
+#
+#
+# def main():
+#     first_employee = Employee('Suzan', 47899, 'Accounting', 'Vice President')
+#     second_employee = Employee('Mark', 39119, 'IT', 'Programming')
+#     third_employee = Employee('Joe', 81774, 'Production', 'Engineer')
+#     print(first_employee)
+#     print(second_employee)
+#     print(third_employee)
+#
+#
+# main()
