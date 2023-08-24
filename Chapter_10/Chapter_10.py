@@ -302,24 +302,178 @@
 #
 # main()
 # Task 7
-class Employee:
-    def __init__(self, name, identifier, department, post):
-        self.__name = name
-        self.__identifier = identifier
-        self.__department = department
-        self.__post = post
-
-    def __str__(self):
-        return f'{self.__name}, {self.__post}, {self.__department}, {self.__identifier}'
-
-
-def main():
-    first_employee = Employee('Suzan', 47899, 'Accounting', 'Vice President')
-    second_employee = Employee('Mark', 39119, 'IT', 'Programming')
-    third_employee = Employee('Joe', 81774, 'Production', 'Engineer')
-    print(first_employee)
-    print(second_employee)
-    print(third_employee)
-
-
-main()
+# import pickle
+# import employee as emp
+#
+#
+# LOOK_UP = 1
+# ADD = 2
+# CHANGE = 3
+# DELETE = 4
+# PRINT = 5
+# QUIT = 6
+#
+#
+# def main():
+#     employee = load_employees()
+#     choice = 0
+#     while choice != QUIT:
+#         choice = get_menu_choice()
+#         if choice == LOOK_UP:
+#             look_up(employee)
+#         elif choice == ADD:
+#             add(employee)
+#         elif choice == CHANGE:
+#             change(employee)
+#         elif choice == DELETE:
+#             delete(employee)
+#         elif choice == PRINT:
+#             print(employee)
+#     save_employees(employee)
+#
+#
+# def load_employees():
+#     try:
+#         with open('employees.dat', 'rb') as file:
+#             employees = pickle.load(file)
+#             file.close()
+#     except EOFError:
+#         employees = {}
+#     return employees
+#
+#
+# def get_menu_choice():
+#     print()
+#     print('Menu')
+#     print('1. Find')
+#     print('2. Add')
+#     print('3. Change')
+#     print('4. Delete')
+#     print('5. Print')
+#     print('6. Quit')
+#     choice = int(input('Input your choice: '))
+#     while choice < LOOK_UP or choice > QUIT:
+#         choice = int(input('Input your choice: '))
+#     return choice
+#
+#
+# def look_up(employee):
+#     identifier = input('Input identifier: ')
+#     print(employee.get(identifier, 'Not found'))
+#
+#
+# def add(employee):
+#     name = input('Name: ')
+#     identifier = input('Identifier: ')
+#     department = input('Department: ')
+#     post = input('Post: ')
+#     entry = emp.Employee(name, identifier, department, post)
+#     if identifier not in employee:
+#         employee[identifier] = entry
+#         print('In dictionary')
+#     else:
+#         print('Not found')
+#
+#
+# def change(employee):
+#     identifier = input('Identifier: ')
+#     if identifier in employee:
+#         name = input('Input new telephone number: ')
+#         department = input('Input new department: ')
+#         post = input('Input new post: ')
+#         entry = emp.Employee(name, identifier, department, post)
+#         employee[identifier] = entry
+#         print('Update')
+#     else:
+#         print('Not found')
+#
+#
+# def delete(employee):
+#     identifier = input('Input identifier: ')
+#     if identifier in employee:
+#         del employee[identifier]
+#         print('Deleted')
+#     else:
+#         print('Not found')
+#
+#
+# def save_employees(employee):
+#     with open('employees.dat', 'wb') as file:
+#         pickle.dump(employee, file)
+#         file.close()
+#
+#
+# main()
+# Task 8
+# class RetailItem:
+#     def __init__(self, description, amount, cost):
+#         self.__description = description
+#         self.__amount = amount
+#         self.__cost = cost
+#
+#     def get_description(self):
+#         return self.__description
+#
+#     def get_amount(self):
+#         return self.__amount
+#
+#     def get_cost(self):
+#         return self.__cost
+#
+#     def set_description(self, description):
+#         self.__description = description
+#
+#     def set_amount(self, amount):
+#         self.__amount = amount
+#
+#     def set_cost(self, cost):
+#         self.__cost = cost
+#
+#     def __str__(self):
+#         return f'{self.__description}, {self.__amount}, {self.__cost}'
+#
+#
+# class CashRegister:
+#
+#     def __init__(self):
+#         self.__cart = [
+#             RetailItem(description='test', amount='test', cost=123),
+#             RetailItem(description='test_2', amount='test_2', cost=455),
+#         ]
+#
+#     def purchase_item(self, retail_item):
+#         self.__cart.append(retail_item)
+#
+#     def get_total(self):
+#         total_cost = 0
+#         for retail_item in self.__cart:
+#             total_cost += retail_item.get_cost()
+#         return total_cost
+#
+#     def show_items(self):
+#         show_items = []
+#         for retail_item in self.__cart:
+#             show_items.append(str(retail_item))
+#         return show_items
+#
+#     def clear(self):
+#         self.__cart.clear()
+#
+#
+# def main():
+#     cart = CashRegister()
+#     choice = 'No'
+#     while choice.upper() != 'YES':
+#         retail_item = RetailItem(
+#             description=input('Input descr'),
+#             amount=input('Input amount'),
+#             cost=int(input('Input cost')),
+#         )
+#         cart.purchase_item(retail_item)
+#         choice = input('Are you ready to buy all this items?')
+#     print(cart.show_items())
+#     print(cart.get_total())
+#     cart.clear()
+#
+#
+# main()
