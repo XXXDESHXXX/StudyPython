@@ -302,24 +302,24 @@
 #
 # main()
 # Task 7
-# class Employee:
-#     def __init__(self, name, identifier, department, post):
-#         self.__name = name
-#         self.__identifier = identifier
-#         self.__department = department
-#         self.__post = post
-#
-#     def __str__(self):
-#         return f'{self.__name}, {self.__post}, {self.__department}, {self.__identifier}'
-#
-#
-# def main():
-#     first_employee = Employee('Suzan', 47899, 'Accounting', 'Vice President')
-#     second_employee = Employee('Mark', 39119, 'IT', 'Programming')
-#     third_employee = Employee('Joe', 81774, 'Production', 'Engineer')
-#     print(first_employee)
-#     print(second_employee)
-#     print(third_employee)
-#
-#
-# main()
+class Employee:
+    def __init__(self, name, identifier, department, post):
+        self.__name = name
+        self.__identifier = identifier
+        self.__department = department
+        self.__post = post
+
+    def __str__(self):
+        return f'{self.__name}, {self.__post}, {self.__department}, {self.__identifier}'
+
+
+def main():
+    first_employee = Employee('Suzan', 47899, 'Accounting', 'Vice President')
+    second_employee = Employee('Mark', 39119, 'IT', 'Programming')
+    third_employee = Employee('Joe', 81774, 'Production', 'Engineer')
+    print(first_employee)
+    print(second_employee)
+    print(third_employee)
+
+
+main()
