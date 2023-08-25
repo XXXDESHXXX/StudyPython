@@ -477,3 +477,55 @@
 #
 #
 # main()
+# Task 9
+class Question:
+    def __init__(self,
+                 question,
+                 first_answer,
+                 second_answer,
+                 third_answer,
+                 fourth_answer,
+                 correct_answer,
+                 ):
+        self.__question = question
+        self.__first_answer = first_answer
+        self.__second_answer = second_answer
+        self.__third_answer = third_answer
+        self.__fourth_answer = fourth_answer
+        self.__correct_answer = correct_answer
+
+    def get_question(self):
+        return self.__question
+
+    def get_first_answer(self):
+        return self.__first_answer
+
+    def get_second_answer(self):
+        return self.__second_answer
+
+    def get_third_answer(self):
+        return self.__third_answer
+
+    def get_fourth_answer(self):
+        return self.__fourth_answer
+
+    def get_correct_answer(self):
+        return self.__correct_answer
+
+    def set_question(self, question):
+        self.__question = question
+
+    def set_first_answer(self, first_answer):
+        self.__first_answer = first_answer
+
+    def set_second_answer(self, second_answer):
+        self.__second_answer = second_answer
+
+    def set_third_answer(self, third_answer):
+        self.__third_answer = third_answer
+
+    def set_fourth_answer(self, fourth_answer):
+        self.__fourth_answer = fourth_answer
+
+    def set_correct_answer(self, correct_answer):
+        self.__correct_answer = correct_answer
