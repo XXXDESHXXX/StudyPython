@@ -478,54 +478,129 @@
 #
 # main()
 # Task 9
-class Question:
-    def __init__(self,
-                 question,
-                 first_answer,
-                 second_answer,
-                 third_answer,
-                 fourth_answer,
-                 correct_answer,
-                 ):
-        self.__question = question
-        self.__first_answer = first_answer
-        self.__second_answer = second_answer
-        self.__third_answer = third_answer
-        self.__fourth_answer = fourth_answer
-        self.__correct_answer = correct_answer
-
-    def get_question(self):
-        return self.__question
-
-    def get_first_answer(self):
-        return self.__first_answer
-
-    def get_second_answer(self):
-        return self.__second_answer
-
-    def get_third_answer(self):
-        return self.__third_answer
-
-    def get_fourth_answer(self):
-        return self.__fourth_answer
-
-    def get_correct_answer(self):
-        return self.__correct_answer
-
-    def set_question(self, question):
-        self.__question = question
-
-    def set_first_answer(self, first_answer):
-        self.__first_answer = first_answer
-
-    def set_second_answer(self, second_answer):
-        self.__second_answer = second_answer
-
-    def set_third_answer(self, third_answer):
-        self.__third_answer = third_answer
-
-    def set_fourth_answer(self, fourth_answer):
-        self.__fourth_answer = fourth_answer
-
-    def set_correct_answer(self, correct_answer):
-        self.__correct_answer = correct_answer
+# class Question:
+#     def __init__(self,
+#                  question,
+#                  first_answer,
+#                  second_answer,
+#                  third_answer,
+#                  fourth_answer,
+#                  correct_answer,
+#                  ):
+#         self.__question = question
+#         self.__first_answer = first_answer
+#         self.__second_answer = second_answer
+#         self.__third_answer = third_answer
+#         self.__fourth_answer = fourth_answer
+#         self.__correct_answer = correct_answer
+#
+#     def get_question(self):
+#         return self.__question
+#
+#     def get_first_answer(self):
+#         return self.__first_answer
+#
+#     def get_second_answer(self):
+#         return self.__second_answer
+#
+#     def get_third_answer(self):
+#         return self.__third_answer
+#
+#     def get_fourth_answer(self):
+#         return self.__fourth_answer
+#
+#     def get_correct_answer(self):
+#         return self.__correct_answer
+#
+#     def set_question(self, question):
+#         self.__question = question
+#
+#     def set_first_answer(self, first_answer):
+#         self.__first_answer = first_answer
+#
+#     def set_second_answer(self, second_answer):
+#         self.__second_answer = second_answer
+#
+#     def set_third_answer(self, third_answer):
+#         self.__third_answer = third_answer
+#
+#     def set_fourth_answer(self, fourth_answer):
+#         self.__fourth_answer = fourth_answer
+#
+#     def set_correct_answer(self, correct_answer):
+#         self.__correct_answer = correct_answer
+#
+#
+# class Quiz:
+#     def __init__(self, questions, amount_of_players):
+#         self.__questions = questions
+#         self.__amount_of_players = amount_of_players
+#         self.__winner_score = [0 for _ in range(amount_of_players)]
+#         self.__question_index = 0
+#
+#     def get_question_index(self):
+#         return self.__question_index
+#
+#     def set_question_index(self, question_index):
+#         self.__question_index = question_index
+#
+#     def get_questions(self):
+#         return self.__questions
+#
+#     def get_amount_of_players(self):
+#         return self.__amount_of_players
+#
+#     def set_questions(self, questions):
+#         self.__questions = questions
+#
+#     def set_amount_of_players(self, amount_of_players):
+#         self.__amount_of_players = amount_of_players
+#
+#     def start_game(self):
+#         while self.__question_index < len(self.__questions):
+#             self.game_round()
+#         print('WINNER IS PLAYER!')
+#         print('--------------------------------------')
+#         print(self.__winner_score.index(max(self.__winner_score)))
+#
+#     def game_round(self):
+#         for turn in range(self.__amount_of_players):
+#             for i in range(5):
+#                 question = self.__questions[i]
+#                 print(question.get_question())
+#                 print("It's ", turn, "player turn")
+#                 print('You got next variant of answers: ')
+#                 print(question.get_first_answer(), '0')
+#                 print(question.get_second_answer(), '1')
+#                 print(question.get_third_answer(), '2')
+#                 print(question.get_fourth_answer(), '3')
+#                 answer = int(input('Input number of your answer'))
+#                 if answer == question.get_correct_answer():
+#                     self.__winner_score[turn] += 1
+#         self.__question_index += 5
+#
+#
+# def main():
+#     quiz = Quiz(
+#         [
+#             Question("Какое животное издает му", "Корова", "Кошка", "Собака", "Муха", 0),
+#             Question("Сколько планет в солнечной системе", "7", "9", "8", "10", 2),
+#             Question("Как называется столица Франции?", "Мадрид", "Париж", "Рим", "Берлин", 1),
+#             Question("Какой химический элемент имеет символ 'O'?", "Кислород", "Водород", "Азот", "Углерод",
+#                      0),
+#             Question("Какой газ является основной составляющей воздуха?", "Кислород", "Водород", "Азот", "Углерод",
+#                      2),
+#             Question("Какой цвет получается смешением синего и красного?", "Зеленый", "Фиолетовый", "Оранжевый",
+#                      "Желтый", 1),
+#             Question("Как называется самая большая планета в солнечной системе?", "Марс", "Венера", "Юпитер", "Сатурн",
+#                      2),
+#             Question("Какой город является столицей Японии?", "Киото", "Осака", "Токио", "Хоккайдо", 2),
+#             Question("Сколько континентов на Земле?", "4", "5", "6", "7", 3),
+#             Question("Какой город называют 'Вечным городом'?", "Париж", "Рим", "Лондон", "Мадрид", 1),
+#         ],
+#         2,
+#     )
+#     quiz.start_game()
+#
+#
+# main()
