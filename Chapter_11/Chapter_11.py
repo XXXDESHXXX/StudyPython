@@ -26,3 +26,4 @@
 # main()
 # ***Programming tasks***
 # Task 1
+class
