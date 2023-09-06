@@ -174,8 +174,9 @@
 #
 #
 # def main():
-#     mailing = bool(input('Would you like to get mails from us?'
-#                          ' 1 - Yes, 2 - No:'))
+#     mailing = bool(input(
+#     'Would you like to get mails from us? 1 - Yes, 2 - No:'
+#     ))
 #     customer = Customer('Donald', 'USA', 2351234, mailing, 15003)
 #     print(customer)
 #
