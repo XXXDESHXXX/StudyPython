@@ -99,3 +99,21 @@
 #
 #
 # main()
+# Task 8
+def main():
+    first_number = int(input('Input first number: '))
+    second_number = int(input('Input second number: '))
+    result = ackerman(first_number, second_number)
+    print(result)
+
+
+def ackerman(first_number, second_number):
+    if first_number == 0:
+        return second_number + 1
+    if second_number == 0:
+        return ackerman(first_number - 1, 1)
+    else:
+        return ackerman(first_number - 1, ackerman(first_number, second_number - 1))
+
+
+main()
