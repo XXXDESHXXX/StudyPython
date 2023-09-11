@@ -295,6 +295,198 @@
 #
 #
 # my_gui = MyGUI()
-# Task 4
+# Task 6
+# import tkinter
+# import tkinter.messagebox
+#
+#
+# class MyGUI:
+#     def __init__(self):
+#         self.main_window = tkinter.Tk()
+#         self.top_frame = self.create_top_frame()
+#         self.bottom_frame = self.create_bottom_frame()
+#         self.total = 0
+#         self.total_message = 0
+#         self.cb_var1 = tkinter.IntVar()
+#         self.cb_var2 = tkinter.IntVar()
+#         self.cb_var3 = tkinter.IntVar()
+#         self.cb_var4 = tkinter.IntVar()
+#         self.cb_var5 = tkinter.IntVar()
+#         self.cb_var6 = tkinter.IntVar()
+#         self.cb_var7 = tkinter.IntVar()
+#         self.cb_var1.set(0)
+#         self.cb_var2.set(0)
+#         self.cb_var3.set(0)
+#         self.cb_var4.set(0)
+#         self.cb_var5.set(0)
+#         self.cb_var6.set(0)
+#         self.cb_var7.set(0)
+#         self.cb1 = self.create_first_checkbutton()
+#         self.cb2 = self.create_second_checkbutton()
+#         self.cb3 = self.create_third_checkbutton()
+#         self.cb4 = self.create_fourth_checkbutton()
+#         self.cb5 = self.create_fifth_checkbutton()
+#         self.cb6 = self.create_sixth_checkbutton()
+#         self.cb7 = self.create_seventh_checkbutton()
+#         self.cb1.pack()
+#         self.cb2.pack()
+#         self.cb3.pack()
+#         self.cb4.pack()
+#         self.cb5.pack()
+#         self.cb6.pack()
+#         self.cb7.pack()
+#         self.show_button = self.create_show_button()
+#         self.quit_button = self.create_quit_button()
+#         self.show_button.pack(side='left')
+#         self.quit_button.pack(side='left')
+#         self.top_frame.pack()
+#         self.bottom_frame.pack()
+#         self.main_window.mainloop()
+#
+#     def create_top_frame(self):
+#         return tkinter.Frame(
+#             self.main_window
+#         )
+#
+#     def create_bottom_frame(self):
+#         return tkinter.Frame(
+#             self.main_window
+#         )
+#
+#     def create_first_checkbutton(self):
+#         return tkinter.Checkbutton(
+#             self.top_frame,
+#             text='Oil 30',
+#             variable=self.cb_var1,
+#             onvalue=30,
+#             offvalue=0
+#         )
+#
+#     def create_second_checkbutton(self):
+#         return tkinter.Checkbutton(
+#             self.top_frame,
+#             text='Lube job 500',
+#             variable=self.cb_var2,
+#             onvalue=500,
+#             offvalue=0,
+#         )
+#
+#     def create_third_checkbutton(self):
+#         return tkinter.Checkbutton(
+#             self.top_frame,
+#             text='Radiator Flush 350',
+#             variable=self.cb_var3,
+#             onvalue=350,
+#             offvalue=0
+#         )
+#
+#     def create_fourth_checkbutton(self):
+#         return tkinter.Checkbutton(
+#             self.top_frame,
+#             variable=self.cb_var4,
+#             text='Transmission Flush 100',
+#             onvalue=750,
+#             offvalue=0
+#         )
+#
+#     def create_fifth_checkbutton(self):
+#         return tkinter.Checkbutton(
+#             self.top_frame,
+#             variable=self.cb_var5,
+#             text='Inspection 150',
+#             onvalue=150,
+#             offvalue=0
+#         )
+#
+#     def create_sixth_checkbutton(self):
+#         return tkinter.Checkbutton(
+#             self.top_frame,
+#             text='Inspection 1300',
+#             variable=self.cb_var6,
+#             onvalue=1300,
+#             offvalue=0
+#         )
+#
+#     def create_seventh_checkbutton(self):
+#         return tkinter.Checkbutton(
+#             self.top_frame,
+#             text='Muffler Replacement 1500',
+#             variable=self.cb_var7,
+#             onvalue=1500,
+#             offvalue=0
+#         )
+#
+#     def create_quit_button(self):
+#         return tkinter.Button(
+#             self.bottom_frame,
+#             text='Quit',
+#             command=self.main_window.destroy
+#         )
+#
+#     def create_show_button(self):
+#         return tkinter.Button(
+#             self.bottom_frame,
+#             text='Show cost',
+#             command=self.show_cost
+#         )
+#
+#     def show_cost(self):
+#         self.total = (
+#             self.cb_var1.get() +
+#             self.cb_var2.get() +
+#             self.cb_var3.get() +
+#             self.cb_var4.get() +
+#             self.cb_var5.get() +
+#             self.cb_var6.get() +
+#             self.cb_var7.get()
+#         )
+#         self.total_message = str(self.total)
+#         tkinter.messagebox.showinfo('Total is:', self.total_message)
+#
+#
+# my_gui = MyGUI()
+# Task 7
+import tkinter
+import tkinter.messagebox
+
+
 class MyGUI:
-    def __init(self):
+    def __init__(self):
+        self.main_window = tkinter.Tk()
+        self.top_frame = self.create_top_frame()
+        self.bottom_frame self.create_bottom_frame()
+        self.
+    def create_top_frame(self):
+        return tkinter.Frame(self.main_window)
+
+    def create_bottom_frame(self):
+        return tkinter.Frame(self.main_window)
+
+    def create_middle_frame(self):
+
+    def create_first_radiobutton(self):
+        return tkinter.Radiobutton(
+            self.top_frame,
+            text='Daily time: 6:00 to 17:59',
+            variable=self.radio_var,
+            value=720
+        )
+
+    def create_second_radiobutton(self):
+        return tkinter.Radiobutton(
+            self.top_frame,
+            text='Dinner time: 18:00 to 23:59',
+            variable=self.radio_var,
+            value=360
+        )
+
+    def create_first_radiobutton(self):
+        return tkinter.Radiobutton(
+            self.top_frame,
+            text='No pick time: 0:00 to 5:59',
+            variable=self.radio_var,
+            value=360
+        )
+
+
+my_gui = MyGUI()
